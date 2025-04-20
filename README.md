@@ -27,12 +27,11 @@ This project demonstrates an intelligent agent built using **LangChain** and **L
 ## 📦 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/langchain-arithmetic-agent.git
    cd langchain-arithmetic-agent
    ```
-
-````
 
 2. **Install dependencies**
 
@@ -103,9 +102,8 @@ Expected Output:
 ---
 
 ## 🔗 Resources
+
 - Youtube referenec https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2071s&ab_channel=PiyushGarg
 - [LangChain Documentation](https://docs.langchain.com/)
 - [LangGraph (JS) Documentation](https://js.langchain.com/docs/langgraph)
 - [LangSmith](https://smith.langchain.com/)
-
-````
