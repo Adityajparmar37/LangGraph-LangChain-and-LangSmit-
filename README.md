@@ -18,7 +18,7 @@ This project demonstrates an intelligent agent built using **LangChain** and **L
 
 - LangChain
 - LangGraph
-- OpenAI GPT-4o
+- OpenAI GPT-4o or Gemini 1.5 pro
 - Zod (Schema Validation)
 - dotenv
 
