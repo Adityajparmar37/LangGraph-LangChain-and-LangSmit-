@@ -1,6 +1,6 @@
 # 🧠 LangChain Arithmetic Agent with LangGraph
 
-This project demonstrates an intelligent agent built using **LangChain** and **LangGraph**. It uses OpenAI's `gpt-4o` model to interpret and perform arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division** through tool calling.
+This project demonstrates an intelligent agent built using **LangChain** and **LangGraph**. It uses OpenAI's `gpt-4o` model or `Gemini 1.5 pro` model to interpret and perform arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division** through tool calling.
 
 ---
 
@@ -97,6 +97,7 @@ Expected Output:
 | **Execution Model** | Chains, tools, agents          | Directed graph with conditional edges           | Logging, tracing, evaluation                        |
 | **Focus**           | Tool binding, chaining, agents | Conditional logic, planning, and execution flow | Monitoring, debugging, and analyzing LLM runs       |
 | **Observability**   | Minimal                        | Minimal                                         | Full tracing, telemetry, and comparison tools       |
+| **states**          | Store limited state            | Store complex state accross grpah               | -                                                   |
 | **Ideal For**       | Prototyping AI apps            | Designing complex agent behaviors               | Improving production systems with visibility        |
 
 ---
@@ -104,6 +105,9 @@ Expected Output:
 ## 🔗 Resources
 
 - Youtube referenec https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2071s&ab_channel=PiyushGarg
+- LangChain vs LangGraph : https://youtu.be/qAF1NjEVHhY?si=3CbguW1svwR0P6FK
+- What is langchain : https://youtu.be/1bUy-1hGZpI?si=04TgK2pv0M8Vg4Bm
+- https://www.youtube.com/live/5gXn3EXD01U?si=22MaldYwpeDvLm5x
 - [LangChain Documentation](https://docs.langchain.com/)
 - [LangGraph (JS) Documentation](https://js.langchain.com/docs/langgraph)
 - [LangSmith](https://smith.langchain.com/)
