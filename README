@@ -1,156 +1,33 @@
-Sure! Here's a comprehensive `README.md` for your project, which includes:
-
-1. **Project Overview**
-2. **Setup Instructions**
-3. **How It Works**
-4. **Explanation of LangChain, LangGraph, and LangSmith**
-5. **Comparison Table**
-
----
-
-### 📘 `README.md`
-
-````markdown
 # 🧠 LangChain Arithmetic Agent with LangGraph
 
-This project demonstrates an intelligent agent built using **LangChain** and **LangGraph**. It leverages OpenAI's `gpt-4o` model to interpret and execute arithmetic operations like **addition**, **subtraction**, **multiplication**, and **division** via tool-calling capabilities.
+This project demonstrates an intelligent agent built using **LangChain** and **LangGraph**. It uses OpenAI's `gpt-4o` model to interpret and perform arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division** through tool calling.
 
 ---
-
-### Reference
-
-https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2071s&ab_channel=PiyushGarg
 
 ## 🚀 Features
 
-- Parses natural language arithmetic queries like:
+- Parses natural language arithmetic expressions like:
   > "Add 3 and 4, multiply by 2, and subtract 1"
-- Uses LangChain `tool` abstraction for custom arithmetic tools.
-- Constructs a LangGraph workflow with condition-based routing.
-- Dynamically decides whether to invoke tools again based on LLM's response.
+- Custom tool implementation using LangChain.
+- Dynamic conditional routing via LangGraph.
+- Automatically determines whether to re-run tools based on the LLM's response.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **LangChain**
-- **LangGraph**
-- **OpenAI GPT-4o**
-- **Zod** (for schema validation)
-- **dotenv** (to manage environment variables)
+- LangChain
+- LangGraph
+- OpenAI GPT-4o
+- Zod (Schema Validation)
+- dotenv
 
 ---
 
-## 🧰 Setup Instructions
+## 📦 Installation
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/langchain-arithmetic-agent.git
    cd langchain-arithmetic-agent
    ```
-````
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Add environment variables**
-   Create a `.env` file:
-
-   ```
-   OPENAI_API_KEY=your_openai_api_key_here
-   ```
-
-4. **Run the project**
-   ```bash
-   node index.js
-   ```
-
----
-
-## 🧮 Example Input
-
-```js
-const messages = [
-  {
-    role: "user",
-    content: "Add 3 and 4. multiply by 2 and sub by 1 ",
-  },
-];
-```
-
-Expected Output:
-
-```js
-{
-  messages: [
-    {
-      role: "assistant",
-      content: "The result is 13.",
-    },
-  ];
-}
-```
-
----
-
-## 🧠 What's Going On?
-
-### 1. LLM Node
-
-`llmCall(state)` - Routes the message to GPT-4o with system instructions to parse and execute or plan tool use.
-
-### 2. ToolNode
-
-Executes custom tools (`add`, `sub`, `multiply`, `div`) if the model calls them.
-
-### 3. Conditional Routing
-
-After each `llmCall`, we check:
-
-- If tools are called → go to tool execution
-- Otherwise → finish execution
-
----
-
-## 📚 LangChain vs LangGraph vs LangSmith
-
-| Feature             | **LangChain**                                  | **LangGraph**                                        | **LangSmith**                                              |
-| ------------------- | ---------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
-| 🧠 Purpose          | Build LLM-powered apps (chains, agents, tools) | Create dynamic, stateful LLM workflows as graphs     | Observability and debugging for LangChain pipelines        |
-| ⚙️ Focus            | Chains, agents, tools, memory, retrievers      | State-based routing, conditionals, flow logic        | Logs, traces, evaluations, latency tracking                |
-| 🔁 Execution Model  | Linear or looping sequences (Chains)           | Directed graph of nodes with conditional edges       | Monitors and visualizes LangChain execution                |
-| 👷 Used For         | Creating chains of LLM calls + logic           | Building agents that can reason, call tools, re-plan | Testing and improving agent performance                    |
-| 🔍 Observability    | Minimal                                        | Minimal                                              | Full logging, tracing, and evaluations                     |
-| 🧩 Tool Integration | Built-in tool abstraction and binding          | Compatible (via `ToolNode`)                          | Tracks tool calls and outcomes                             |
-| 🧪 Dev Experience   | Easy to prototype with chains                  | Ideal for advanced agents or dynamic workflows       | Ideal for improving models and debugging production issues |
-
----
-
-## 📎 Useful Links
-
-- 🌐 [LangChain Docs](https://docs.langchain.com/)
-- 🌐 [LangGraph Docs](https://js.langchain.com/docs/langgraph)
-- 🌐 [LangSmith](https://smith.langchain.com/)
-- 🧪 [Troubleshooting Errors](https://js.langchain.com/docs/troubleshooting/errors/)
-
----
-
-## 🙌 Contribution
-
-Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
-[MIT](LICENSE)
-
-```
-
----
-
-Let me know if you’d like a sample `package.json`, project structure, or want to deploy this with an interactive frontend.
-```
