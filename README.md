@@ -1,8 +1,3 @@
-Sure! Here's your `README.md` in proper markdown format:
-
----
-
-````markdown
 # 🧠 LangChain Arithmetic Agent with LangGraph
 
 This project demonstrates an intelligent agent built using **LangChain** and **LangGraph**. It uses OpenAI's `gpt-4o` model to interpret and perform arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division** through tool calling.
@@ -36,6 +31,7 @@ This project demonstrates an intelligent agent built using **LangChain** and **L
    git clone https://github.com/your-username/langchain-arithmetic-agent.git
    cd langchain-arithmetic-agent
    ```
+
 ````
 
 2. **Install dependencies**
@@ -107,25 +103,9 @@ Expected Output:
 ---
 
 ## 🔗 Resources
-
+- Youtube referenec https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2071s&ab_channel=PiyushGarg
 - [LangChain Documentation](https://docs.langchain.com/)
 - [LangGraph (JS) Documentation](https://js.langchain.com/docs/langgraph)
 - [LangSmith](https://smith.langchain.com/)
 
----
-
-## 🤝 Contributing
-
-Pull requests are welcome. For significant changes, please open an issue to discuss what you would like to change.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-```
+````
